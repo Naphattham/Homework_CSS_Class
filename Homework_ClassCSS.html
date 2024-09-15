@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Find Your Best Friend</title>
+    <link rel="stylesheet" href="stylehomework.css">
+    <link rel="icon" href="icon_animal.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('background_homeclass.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a>
+            <div class="logo">
+                🐱
+            </div>
+        </a>
+        <nav>
+            <a href="">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products/Services</a>
+            <a href="#">Blog/Articles</a>
+            <a href="#">Pet Profiles</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="right-menu">
+            <a href="#">Search</a>
+            <div class="divider"></div>
+            <a href="#">Log in</a>
+        </div>
+    </header>
+    <div class="white-box">
+        <div class="hero">
+            <h1 class="playpen-sans-regular">
+                <span>Best Care of</span><br>
+                <span>Our Little</span>
+            </h1>
+            <img src="image_special.jpg" alt="Best Care of Our Better Friends">
+            <h1 class="playpen-sans-regular">
+                <span>Friends</span>
+            </h1>
+        </div>
+
+        <div class="buttons">
+            <button class="menu-btn">=</button>
+            <button class="scroll-btn" onclick="scrollToBottom()">
+                <span>SCROLL DOWN</span>
+                <span>&#x2193;</span>
+            </button>
+            <button class="arrow-btn">&#x2193;</button>
+        </div>
+        
+        <script>
+            function scrollToBottom() {
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        </script>        
+
+    </div>
+
+    <div class="white-boxim">
+        <a href="https://www.purina.co.th/find-a-pet/cat-breeds" target="_blank">
+            <img src="image1.jpg" alt="Image 1">
+        </a>
+        <a href="https://www.nyan.cat/" target="_blank">
+            <img src="image2.jpg" alt="Image 2">
+        </a>
+        <a href="https://popcat.click/" target="_blank">
+            <img src="image3.jpg" alt="Image 3">
+        </a>
+        <a href="https://tenor.com/view/cat-dance-dancing-cat-chinese-dancing-cat-funny-cat-meme-cat-gif-18059553370350307210"
+            target="_blank">
+            <img src="image4.jpg" alt="Image 4">
+        </a>
+    </div>
+    </div>
+
+</body>
+
+</html>

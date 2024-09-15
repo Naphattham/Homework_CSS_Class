@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(168, 227, 249);
+}
+
+.logo {
+    background-color: rgb(240, 187, 255);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: grab;
+}
+.logo:hover {
+    background-color: #ff9af5; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    transform: scale(1.2); /* ขยายขนาดโลโก้เล็กน้อยเมื่อ hover */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    cursor: no-drop;
+}
+nav a:first-child {
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+}
+nav a:hover {
+    background-color: #e0e0e0;
+    border-radius: 50px;
+}
+
+
+.right-menu {
+    display: flex;
+    align-items: center;
+}
+.right-menu a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.divider {
+    height: 20px;
+    width: 1px;
+    background-color: gray;
+    margin-left: 15px;
+}
+
+/* Fonts */
+.playpen-sans-regular { 
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.white-box {
+    height: 400px;
+    background-image: url('background_middle.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 95px;
+    font-weight: bold;
+    margin: 0 20px;
+    line-height: 1.2;
+    color: rgb(255, 141, 225);
+}
+.hero img {
+    width: 250px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menu-btn {
+    background-color: rgb(168, 227, 249);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.menu-btn:hover {
+    background-color: rgb(240, 187, 255);
+    transform: scale(1.1); 
+}
+.scroll-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(168, 227, 249);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    padding: 19px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-left: auto;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.scroll-container {
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-btn:hover {
+    background-color: rgb(120, 120, 120)
+}
+.scroll-btn span {
+    margin-left: 10px;
+}
+.arrow-btn {
+    background-color: rgb(168, 227, 249);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative; /* สำหรับการจัดตำแหน่งเส้นใต้ */
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s; /* เพิ่มการเปลี่ยนแปลงแบบ smooth */
+    border: none;
+}
+.arrow-btn:hover {
+    background-color: rgb(240, 187, 255);
+    transform: scale(1.1);
+}
+.arrow-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 11px;
+    width: 20px;  
+    height: 1px; 
+    background-color: rgb(0, 0, 0);
+}
+
+.white-boxim {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.white-boxim img {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+.white-boxim img:hover {
+    transform: scale(1.1);
+}
+
+#bottom-section {
+    height: 100vh;
+    background-color: #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
